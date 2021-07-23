@@ -1,6 +1,5 @@
 from collections import Counter
 def stringAnagram(dictionary, query):
-    # Write your code here
     d = ["".join(sorted(word)) for word in dictionary]
     q = ["".join(sorted(word)) for word in query]
     count = Counter(d)
