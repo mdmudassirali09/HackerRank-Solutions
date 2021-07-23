@@ -1,2 +1,5 @@
 # HackerRank-Solutions
-Hacker-Rank-Problem-Solving-Basic-Certification-All-Test-Cases-Passed
+
+Hacker Rank Problem Solving Basic Certification 
+
+All Test Cases Passed
