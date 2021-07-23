@@ -1,18 +1,22 @@
-def getMinCost(crew_id, job_id):
-    c=sorted(crew_id)
-    j=sorted(job_id)
-    sum=0
-    for i in range(len(c)):
-        sum+=(abs(c[i]-j[i]))
-    return sum
-
+from collections import Counter
+def stringAnagram(dictionary, query):
+    # Write your code here
+    d = ["".join(sorted(word)) for word in dictionary]
+    q = ["".join(sorted(word)) for word in query]
+    count = Counter(d)
+    for w in q:
+        if w in count.keys():
+            print(count[w])
+        else:
+            print(0)
+            
 if __name__ == "__main__":
-    crew_id_count = int(input())
-    crew_id=[]
-    for _ in range(crew_id_count):
-        crew_id.append(int(input()))
-    job_id_count = int(input())
-    job_id=[]
-    for _ in range(job_id_count):
-        job_id.append(int(input()))
-    print(getMinCost(crew_id, job_id))
+    dictionary_count=int(input())
+    dictionary=[]
+    for i in range(dictionary_count):
+        dictionary.append(input())
+    query_count=int(input())
+    query=[]
+    for i in range(query_count):
+        query.append(input())
+    stringAnagram(dictionary, query)
