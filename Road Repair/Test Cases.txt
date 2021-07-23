@@ -1,0 +1,33 @@
+Test Case 0
+Input:
+5
+5
+3
+1
+4
+6
+5
+9
+8
+3
+15
+1
+
+Output:
+17
+
+Test Case 1
+Input:
+4
+5
+1
+4
+2
+4
+4
+7
+9
+10
+
+Output:
+18
